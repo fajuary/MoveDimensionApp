@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap.Horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="20px"
+    android:paddingTop="30px"
+    android:paddingBottom="30px"
+    >
+
+    <TextView
+        android:id="@+id/recycleview_praiselistitem_sendnameTxt"
+        style="@style/WrapWrap"
+        android:text="周润发  送 "
+        android:textColor="#666366"
+        android:textSize="32px"
+        />
+    <TextView
+        android:id="@+id/recycleview_praiselistitem_praiseTypeNumTxt"
+        android:layout_marginLeft="8px"
+
+        style="@style/WrapWrap"
+        android:text="1"
+        android:textColor="#E53E79"
+        android:textSize="32px"
+        />
+    <TextView
+        android:layout_marginLeft="8px"
+        style="@style/WrapWrap"
+        android:text="个祝福"
+        android:textColor="#666366"
+        android:textSize="32px"
+
+        />
+</LinearLayout>

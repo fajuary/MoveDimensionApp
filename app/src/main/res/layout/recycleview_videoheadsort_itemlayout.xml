@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap"
+    android:background="@drawable/headsort_videobg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="40px"
+    android:paddingBottom="40px"
+    android:layout_marginTop="15px"
+    android:layout_marginLeft="4px"
+    android:layout_marginRight="20px"
+    android:id="@+id/recycleview_videoheadsort_itemlinlayout"
+    >
+    <ImageView
+        android:id="@+id/recycleview_headsortvideo_prizesImg"
+        style="@style/MatchWrap"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/head_sortbg"
+        />
+    <TextView
+        android:id="@+id/recycleview_headsortvideo_prizestitleTxt"
+
+        style="@style/WrapWrap"
+        android:layout_marginTop="20px"
+        android:text="君来投 1000元理财券"
+        android:textSize="38px"
+        android:textColor="#101010"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:minLines="2"
+        />
+    <TextView
+        android:id="@+id/recycleview_headsortvideo_prizesNumTxt"
+
+        style="@style/WrapWrap"
+        android:layout_marginTop="10px"
+        android:text="1 名"
+        android:textColor="#C40611"
+        android:textSize="40px"
+        android:visibility="visible"
+        />
+    
+</LinearLayout>

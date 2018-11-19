@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap.Vertical"
+    android:background="@color/white"
+    android:id="@+id/recycleview_videolist_itemclickLin"
+
+    >
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:paddingTop="26px"
+        android:paddingLeft="30px"
+        android:paddingBottom="30px"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/recycleview_videolist_videoshowImg"
+
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:src="@mipmap/video_listbg"
+            />
+        <RelativeLayout
+            style="@style/AutoWrap"
+            android:paddingTop="30px"
+            android:paddingLeft="30px"
+            android:paddingRight="20px"
+            >
+            <TextView
+                android:id="@+id/recycleview_videolist_videotypeTxt"
+                style="@style/WrapWrap"
+                android:text="录制时间："
+                android:textColor="#383838"
+                android:textSize="40px"
+                />
+            <TextView
+                android:id="@+id/recycleview_videolist_videotimeTxt"
+
+                android:layout_toRightOf="@+id/recycleview_videolist_videotypeTxt"
+                style="@style/WrapWrap"
+                android:text="2018-02-10 18:23"
+                android:textColor="#8C898C"
+                android:textSize="40px"
+
+                />
+            <TextView
+                android:id="@+id/recycleview_videolist_videodescripTxt"
+
+
+                android:layout_marginTop="20px"
+                android:layout_below="@+id/recycleview_videolist_videotypeTxt"
+                style="@style/WrapWrap"
+                android:text="如果你无法简洁的表达你的想法，那只说明你还不够了解它。
+   -- 阿尔伯特·爱因斯坦"
+                android:textColor="#8C898C"
+                android:textSize="38px"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        />
+</LinearLayout>

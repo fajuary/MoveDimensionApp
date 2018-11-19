@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MoveDimensionApp.iml" filepath="$PROJECT_DIR$/MoveDimensionApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dongweimoveview/dongweimoveview.iml" filepath="$PROJECT_DIR$/dongweimoveview/dongweimoveview.iml" />
+    </modules>
+  </component>
+</project>

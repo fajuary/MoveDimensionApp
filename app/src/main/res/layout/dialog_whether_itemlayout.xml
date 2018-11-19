@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:background="@drawable/login_checkbg"
+    android:paddingTop="40px"
+    >
+    <TextView
+        android:id="@+id/dialog_whetherlayout_titleTxt"
+       style="@style/WrapWrap"
+        android:text="未登录"
+        android:textColor="#080305"
+        android:textSize="46px"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/dialog_whetherlayout_messageTxt"
+
+        style="@style/WrapWrap"
+        android:text="是否去登录？"
+        android:layout_gravity="center"
+        android:textColor="#140B0C"
+        android:layout_marginTop="15px"
+        android:textSize="38px"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D57582"
+        android:layout_marginTop="50px"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px">
+        <TextView
+            android:id="@+id/dialog_whetherlayout_cancleTxt"
+
+            style="@style/AutoMatch"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="#2976FA"
+            android:textSize="42px"
+            />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#D57582"
+            />
+        <TextView
+            android:id="@+id/dialog_whetherlayout_confirmTxt"
+            style="@style/AutoMatch"
+            android:text="确定"
+            android:gravity="center"
+            android:textColor="#2976FA"
+            android:textSize="42px"
+            />
+    </LinearLayout>
+
+</LinearLayout>

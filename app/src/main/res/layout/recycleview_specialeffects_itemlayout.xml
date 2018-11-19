@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapWrap.Vertical"
+    android:gravity="center"
+    android:id="@+id/recycleview_specialeffects_speciallinLayout"
+    >
+
+    <FrameLayout
+        android:layout_width="110px"
+        android:layout_height="110px"
+        >
+        <ImageView
+            android:id="@+id/recycleview_specialeffects_effectsImg"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_gravity="center"
+            android:src="@mipmap/gift_ruleicon" />
+        <ImageView
+            android:id="@+id/recycleview_specialeffects_effectSelectImg"
+
+            style="@style/MatchMatch"
+            android:layout_gravity="center"
+            android:src="@drawable/special_effectsbg"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/recycleview_specialeffects_effectsPriceTxt"
+
+        android:layout_marginTop="20px"
+      style="@style/WrapWrap"
+        android:text="￥1.00"
+        android:textSize="34px"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

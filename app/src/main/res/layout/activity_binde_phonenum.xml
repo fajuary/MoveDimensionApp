@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    android:background="#E8E8E8"
+    >
+    <include layout="@layout/base_backleftnoright_headlayout"/>
+
+    <LinearLayout
+        android:id="@+id/activity_feedback_bindephoneNumLin"
+
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:layout_marginBottom="40px"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/activity_feedback_phoneNumTxt"
+
+            style="@style/WrapWrap"
+            android:text="13811180443"
+            android:textColor="#8C899A"
+            android:textSize="40px"
+            />
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            />
+        <TextView
+            style="@style/WrapWrap"
+            android:text="已绑定"
+            android:textColor="#C7CAD6"
+            android:textSize="40px"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="80px"
+        android:paddingBottom="40px"
+        style="@style/MatchWrap.Vertical"
+        android:background="@color/white"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px">
+            <EditText
+                android:id="@+id/activity_feedback_phoneNumEdtxt"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="110px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="40px"
+                android:background="@drawable/feedback_inputbg"
+                android:hint="绑定手机号"
+                android:paddingLeft="15px"
+                android:textColor="#101010"
+                android:textColorHint="#888888"
+                android:textSize="38px"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:textCursorDrawable="@null"
+                />
+            <TextView
+                android:id="@+id/activity_feedback_getCodeTxt"
+
+                android:layout_width="wrap_content"
+                android:layout_height="92px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:textSize="36px"
+                android:background="@drawable/verificate_codeselect"
+                android:layout_marginRight="30px"
+                android:textColor="@color/white"
+                android:text="获取验证码"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/activity_feedback_validateCodeEdtxt"
+
+            android:layout_width="430px"
+            android:layout_height="110px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/feedback_inputbg"
+            android:hint="验证码"
+            android:paddingLeft="15px"
+            android:textColor="#101010"
+            android:textColorHint="#888888"
+            android:textSize="38px"
+            android:inputType="textVisiblePassword"
+            android:textCursorDrawable="@null"
+            />
+
+        <TextView
+            android:id="@+id/activity_feedback_bindingTxt"
+            style="@style/WrapWrap"
+            android:textSize="38px"
+            android:layout_marginTop="90px"
+            android:paddingLeft="70px"
+            android:paddingRight="70px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/submit_feedback"
+            android:text="绑  定"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

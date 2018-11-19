@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical">
+
+    <FrameLayout style="@style/MatchAuto">
+
+        <ImageView
+            style="@style/MatchMatch"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/video_bgicon" />
+
+        <LinearLayout
+            style="@style/MatchMatch.Vertical"
+            android:paddingTop="50px">
+
+            <LinearLayout
+                android:id="@+id/layout_main_leftMenuLin"
+                android:layout_width="130px"
+                android:layout_height="100px"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="60px"
+                    android:src="@mipmap/menu_icon" />
+            </LinearLayout>
+            <View
+                android:layout_width="0px"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="900px"
+                android:background="@color/white"
+                android:layout_marginBottom="120px"
+                android:layout_marginLeft="120px"
+                android:layout_marginRight="120px"
+                >
+                <SurfaceView
+                    android:id="@+id/layout_main_mSurfaceView"
+                    style="@style/MatchMatch"
+                    />
+                <ImageView
+                    android:id="@+id/layout_main_recordIconImg"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="30px"
+                    android:src="@mipmap/record_icon"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="#101010">
+
+        <LinearLayout
+            android:id="@+id/layout_main_newyearsCourseLin"
+            style="@style/AutoMatch.Vertical"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="120px"
+                android:layout_height="120px">
+
+                <ImageView
+                    style="@style/MatchMatch"
+                    android:src="@drawable/mainbtm_check" />
+
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="90px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/first_bookicon" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginTop="20px"
+                android:text="拜年教程"
+                android:textColor="@color/white"
+                android:textSize="38px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_main_rankeListLin"
+
+            style="@style/AutoMatch.Vertical"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="120px"
+                android:layout_height="120px">
+
+                <ImageView
+                    style="@style/MatchMatch"
+                    android:src="@drawable/mainbtm_check" />
+
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="90px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ranke_icon" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginTop="20px"
+                android:text="排行榜"
+                android:textColor="@color/white"
+                android:textSize="38px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_main_newyearsVideoLin"
+
+            style="@style/AutoMatch.Vertical"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="120px"
+                android:layout_height="120px">
+
+                <ImageView
+                    style="@style/MatchMatch"
+                    android:src="@drawable/mainbtm_check" />
+
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="90px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/year_videoicon"
+                    />
+            </FrameLayout>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginTop="20px"
+                android:text="拜年视频"
+                android:textColor="@color/white"
+                android:textSize="38px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap.Vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="30px"
+        >
+        <TextView
+            android:id="@+id/dialog_selectpaytype_cancleTxt"
+           style="@style/WrapMatch"
+            android:text="取消"
+            android:textColor="#333"
+            android:gravity="center"
+            android:textSize="40px"
+            android:paddingLeft="30px"
+            android:paddingRight="40px"
+            />
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/dialog_selectpaytype_buypriceTxt"
+            style="@style/WrapWrap"
+            android:text="￥ 2.00"
+            android:textColor="#C30D23"
+            android:textSize="40px"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"
+        />
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:padding="40px"
+        android:gravity="center_vertical"
+        android:id="@+id/dialog_selectpaytype_selectRecordpayLin"
+
+        >
+        <TextView
+            android:id="@+id/dialog_selectpaytype_firstpayTxt"
+
+            style="@style/WrapWrap"
+            android:textSize="36px"
+            android:textColor="#101010"
+            android:text="使用5元录制卷抵扣"
+            />
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/dialog_selectpaytype_selectRecordpayImg"
+
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/paytype_selectbg"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"
+        />
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:padding="40px"
+        android:gravity="center_vertical"
+        android:id="@+id/dialog_selectpaytype_selectWxpayLin"
+
+        >
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/wechat_icon"
+            />
+        <TextView
+            android:layout_marginLeft="15px"
+            style="@style/WrapWrap"
+            android:textSize="36px"
+            android:textColor="#101010"
+            android:text="微信支付"
+            />
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/dialog_selectpaytype_selectWxpayImg"
+
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/paytype_selectbg"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_selectpaytype_promptlypayTxt"
+
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:background="#C30D23"
+        android:text="立即支付"
+        android:textSize="38px"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

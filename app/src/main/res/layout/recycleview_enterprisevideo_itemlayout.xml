@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap.Vertical"
+    android:id="@+id/recycleview_enterprisevideo_enterprisevideoLin"
+    android:layout_marginTop="20px"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    android:paddingBottom="30px"
+    >
+    <ImageView
+        android:id="@+id/recycleview_enterprisevideo_videoImgView"
+        style="@style/MatchWrap"
+        android:src="@drawable/video_shooteicon"
+        />
+    <TextView
+        android:id="@+id/recycleview_enterprisevideo_enterpriseNameTxt"
+        style="@style/WrapWrap"
+        android:text="动维"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="40px"
+        android:textColor="#222"
+        android:layout_marginRight="20px"
+        />
+    <TextView
+        android:id="@+id/recycleview_enterprisevideo_descripTxt"
+        style="@style/WrapWrap"
+        android:text="动维"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="32px"
+        android:textColor="#666"
+        android:layout_marginRight="20px"
+        />
+
+</LinearLayout>

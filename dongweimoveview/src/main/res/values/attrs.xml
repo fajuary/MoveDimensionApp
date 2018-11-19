@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--侧滑菜单-->
+    <attr name="rightPadding" format="dimension" />
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+    <declare-styleable name="TimeTextView">
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AutoLayout_Layout">
+
+        <attr name="layout_auto_basewidth">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr>
+
+        <attr name="layout_auto_baseheight">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+            <flag name="minWidth" value="8192"/>
+            <flag name="maxWidth" value="16384"/>
+            <flag name="minHeight" value="32768"/>
+            <flag name="maxHeight" value="65536"/>
+        </attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MetroLayout">
+        <attr name="metro_divider" format="dimension"/>
+    </declare-styleable>
+</resources>

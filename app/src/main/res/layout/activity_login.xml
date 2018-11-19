@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:background="@mipmap/login_bgimg"
+
+    >
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:gravity="center"
+        android:layout_above="@+id/activity_login_registerProtocolTxt"
+        android:layout_marginBottom="200px"
+        >
+        <TextView
+            android:id="@+id/activity_login_phoneNumLoginTxt"
+            style="@style/WrapWrap"
+            android:text="手机号码登录"
+            android:textColor="@color/white"
+            android:textSize="38px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            />
+        <LinearLayout
+            android:id="@+id/activity_login_wechatLoginLin"
+
+            android:layout_width="match_parent"
+            android:layout_height="113px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:background="@drawable/weichat_bgicon"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/login_wechaticon"
+                />
+            <TextView
+               style="@style/WrapWrap"
+                android:text="微信登录"
+                android:layout_marginLeft="20px"
+                android:textColor="#101010"
+                android:textSize="38px"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_login_visitorsLoginTxt"
+
+            style="@style/WrapWrap"
+            android:text="游客登录"
+            android:textColor="@color/white"
+            android:textSize="38px"
+            android:layout_marginTop="10px"
+            android:paddingTop="15px"
+            android:paddingBottom="15px"
+            android:paddingLeft="60px"
+            android:paddingRight="60px"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/activity_login_registerProtocolTxt"
+       style="@style/WrapWrap"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="注册登录即表示你已经同意\n用户协议及隐私条款"
+        android:layout_marginBottom="40px"
+        android:textSize="36px"
+        />
+</RelativeLayout>

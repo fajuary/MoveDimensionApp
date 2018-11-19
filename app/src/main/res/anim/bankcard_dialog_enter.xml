@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true"
+    >
+
+    <translate
+        android:fromYDelta="-50%p"
+        android:duration="500"
+        />
+
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="500"
+        />
+
+
+    <!--<translate-->
+
+        <!--android:fromXDelta="0″ //设置动画开始时x坐标的位置-->
+
+    <!--android:toXDelta=”-100%p” //设置动画结束时x坐标的位置-->
+
+    <!--android:duration=”300″ //设置动画持续的时间 300毫秒-->
+
+    <!--/>-->
+
+
+    <!--<alpha-->
+
+    <!--android:fromAlpha=”1.0″            //设置动画开始时的透明度  1.0代表不透明-->
+
+    <!--android:toAlpha=”0.0″   //设置动画开始时的透明度  0.0表示完全透明-->
+
+    <!--android:duration=”300″ //设置动画持续的时间 300毫秒-->
+
+    <!--/>-->
+
+    <!--<scale-->
+
+    <!--android:interpolator=”              //设置动画出入器-->
+
+    <!--@android:anim/accelerate_decelerate_interpolator”-->
+
+    <!--android:fromXScale=”0.0″       //设置动画开始时x坐标上的伸缩长度-->
+
+    <!--android:toXScale=”1.4″            //设置动画结束时x坐标上的伸缩长度-->
+
+    <!--android:fromYScale=”0.0″       //设置动画开始时y坐标上的伸缩长度-->
+
+    <!--android:toYScale=”1.4″     //设置动画开始时y坐标上的伸缩长度-->
+
+    <!--android:pivotX=”50%”      //设置动画相对于控件的x坐标的位置-->
+
+    <!--android:pivotY=”50%”      //设置动画相对于控件的y坐标的位置-->
+
+    <!--android:fillAfter=”false”    //该动画转化在动画结束前开始应用-->
+
+    <!--android:duration=”700″ //设置动画持续的时间-->
+
+    <!--/>-->
+
+    <!--<rotate-->
+
+    <!--android:interpolator=            //设置动画出入器-->
+
+    <!--“@android:anim/accelerate_decelerate_interpolator”-->
+
+    <!--android:fromDegrees=”0″     //设置动画开始时的角度-->
+
+    <!--android:toDegrees=”+350″           //设置动画结束时的旋转角度-->
+
+    <!--android:pivotX=”50%”         //设置动画相对于控件的x坐标的位置-->
+
+    <!--android:pivotY=”50%”         //设置动画相对于控件的y坐标的位置-->
+
+    <!--android:duration=”3000″       //设置动画持续的时间-->
+
+    <!--/>-->
+</set>  

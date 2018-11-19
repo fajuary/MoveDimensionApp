@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical">
+    <include layout="@layout/base_backleftnoright_headlayout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_newyearlist_sortRecycleView"
+       style="@style/MatchWrap">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+       style="@style/WrapWrap"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="40px"
+        android:text="拜年排行榜"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#101010"
+        android:textSize="42px"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_newyearlist_rankeRecycleView"
+
+        style="@style/MatchWrap">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

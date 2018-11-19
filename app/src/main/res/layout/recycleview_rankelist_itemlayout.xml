@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/MatchWrap.Horizontal"
+    android:background="@drawable/headsort_videobg"
+    android:paddingTop="40px"
+    android:paddingBottom="40px"
+    android:id="@+id/recycleview_rankelist_rankeitemlayout"
+    >
+    <ImageView
+        android:id="@+id/recycleview_rankelist_personImg"
+        style="@style/AutoWrap"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/head_sortbg"
+        />
+    <LinearLayout
+       style="@style/AutoWrap.Vertical"
+        android:paddingTop="10px"
+        >
+        <TextView
+            android:id="@+id/recycleview_rankelist_rankingNumTxt"
+
+            style="@style/WrapWrap"
+            android:text="NO.1"
+            android:textColor="#FF9800"
+            android:textSize="50px"
+            />
+        <TextView
+            android:id="@+id/recycleview_rankelist_personNameTxt"
+
+            style="@style/WrapWrap"
+            android:layout_marginTop="15px"
+            android:textSize="40px"
+            android:textColor="#101010"
+            android:text="谁怕谁"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

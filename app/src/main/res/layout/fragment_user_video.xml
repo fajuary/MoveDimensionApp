@@ -1,0 +1,9 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch">
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/fragment_uservideo_mRecyclerView"
+        style="@style/MatchMatch">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/MatchMatch.Vertical"
+    android:background="#E8E8E8"
+    >
+    <include layout="@layout/base_backleftnoright_headlayout"/>
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_marginTop="10px"
+            style="@style/MatchWrap"
+            >
+            <ImageView
+                android:id="@+id/activity_personaldata_personImgView"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                />
+            <TextView
+                android:id="@+id/activity_personaldata_nicknameTxt"
+                android:layout_toRightOf="@+id/activity_personaldata_personImgView"
+                android:layout_alignTop="@+id/activity_personaldata_personImgView"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="30px"
+                style="@style/WrapWrap"
+                android:textColor="#FF9800"
+                android:textSize="42px"
+                android:text="任 卓"
+                />
+            <TextView
+                android:id="@+id/activity_personaldata_typetxt"
+                style="@style/WrapWrap"
+                android:layout_alignBottom="@+id/activity_personaldata_personImgView"
+                android:layout_toRightOf="@+id/activity_personaldata_personImgView"
+                android:text="共积祝福："
+                android:layout_marginLeft="30px"
+                android:layout_marginBottom="30px"
+                android:textSize="40px"
+                />
+            <TextView
+                android:id="@+id/activity_personaldata_blessingNumTxt"
+                android:layout_toRightOf="@+id/activity_personaldata_typetxt"
+                android:layout_alignBottom="@+id/activity_personaldata_personImgView"
+                style="@style/WrapWrap"
+                android:text="12785 个"
+                android:textColor="#C30D23"
+                android:layout_marginBottom="30px"
+                android:textSize="40px"
+                />
+            <LinearLayout
+                style="@style/WrapWrap.Horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                >
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="全国排名"
+                    android:textSize="38px"
+                    android:textColor="#B8B8B8"
+                    android:layout_marginRight="30px"
+                    />
+                <TextView
+                    android:id="@+id/activity_personaldata_nationalRankeNumTxt"
+
+                    style="@style/WrapWrap"
+                    android:text="NO.50"
+                    android:textSize="40px"
+                    android:textColor="#FF9800"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/activity_personaldata_bindphoneNumTxt"
+
+                android:layout_alignBottom="@+id/activity_personaldata_personImgView"
+                android:layout_alignParentRight="true"
+                style="@style/WrapWrap"
+                android:text="未绑定手机号"
+                android:textSize="38px"
+                android:textColor="#B8B8B8"
+                android:layout_marginRight="25px"
+                android:layout_marginBottom="20px"
+                />
+
+        </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30px"
+        android:background="@drawable/myinfo_bg"
+        />
+
+        <LinearLayout
+           style="@style/MatchWrap.Horizontal"
+            android:paddingTop="60px"
+            android:paddingBottom="60px"
+            android:paddingLeft="130px"
+            android:paddingRight="130px"
+            >
+            <LinearLayout
+               style="@style/AutoWrap.Vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/activity_personaldata_goodluckNumImg"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/myinfo_blesseicon"
+                    />
+                <TextView
+                    android:id="@+id/activity_personaldata_goodluckNumTxt"
+                    android:layout_marginTop="10px"
+                    style="@style/WrapWrap"
+                    android:textColor="#E51C23"
+                    android:text="20个"
+                    android:textSize="42px"
+                    />
+            </LinearLayout>
+            <LinearLayout
+               style="@style/AutoWrap.Vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/activity_personaldata_justNumImg"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/myinfo_justicon"
+                    />
+                <TextView
+                    android:id="@+id/activity_personaldata_justNumTxt"
+                    android:layout_marginTop="10px"
+
+                    style="@style/WrapWrap"
+                    android:textColor="#E51C23"
+                    android:text="23个"
+                    android:textSize="42px"
+                    />
+            </LinearLayout>
+            <LinearLayout
+               style="@style/AutoWrap.Vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/activity_personaldata_prosperityNumImg"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/myinfo_prosperityicon"
+                    />
+                <TextView
+                    android:id="@+id/activity_personaldata_prosperityNumTxt"
+                    android:layout_marginTop="10px"
+
+                    style="@style/WrapWrap"
+                    android:textColor="#E51C23"
+                    android:text="32个"
+                    android:textSize="42px"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+       style="@style/MatchMatch.Horizontal"
+        android:layout_marginTop="40px"
+        >
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="#F8F8F8">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_personaldata_blesseRecyclerView"
+                style="@style/MatchMatch"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_personaldata_praiseRecyclerView"
+                style="@style/MatchMatch"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

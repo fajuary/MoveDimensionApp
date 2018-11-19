@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:choiceMode="singleChoice"
+    android:background="#991119"
+    >
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        android:layout_marginTop="130px"
+        >
+        <LinearLayout
+            style="@style/MatchWrap.Horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="50px"
+            >
+            <ImageView
+                android:id="@+id/layout_menucontent_personAvatarImg"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:src="@drawable/default_personimg"
+                />
+
+            <LinearLayout
+                style="@style/WrapWrap.Vertical">
+
+                <TextView
+                    android:id="@+id/layout_menucontent_nicknameTxt"
+                    style="@style/WrapWrap"
+                    android:text="登 录"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30px"
+                    android:textSize="42px"
+                    />
+                <TextView
+                    android:id="@+id/layout_menucontent_balanceNumTxt"
+                    style="@style/WrapWrap"
+                    android:text="余额 ￥ 5.00"
+                    android:textColor="#FFC700"
+                    android:textSize="36px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="15px"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FF9198"
+            android:layout_marginTop="70px"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/layout_menucontent_myvideoLin"
+            style="@style/leftlayout_infoLin"
+            android:layout_marginTop="40px"
+            >
+
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="68px"
+                    android:layout_height="76px"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/my_videoicon"
+                    />
+            </LinearLayout>
+            <TextView
+                style="@style/left_textStyle"
+                android:text="我的视频" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_menucontent_prizesruleLin"
+            style="@style/leftlayout_infoLin"
+
+            >
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="62px"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/gift_ruleicon"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layout_menucontent_firstRuleNameTxt"
+
+                style="@style/left_textStyle"
+                android:text="奖品规则" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_menucontent_visityeardeclareLin"
+            style="@style/leftlayout_infoLin"
+            >
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="68px"
+                    android:layout_height="68px"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/newyear_bgicon"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layout_menucontent_secondRuleNameTxt"
+
+                style="@style/left_textStyle"
+                android:text="拜年了声明" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_menucontent_bindephonenumLin"
+            style="@style/leftlayout_infoLin"
+            >
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="64px"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/bind_phoneicon"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/left_textStyle"
+                android:text="绑定手机号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_menucontent_updatedVersionLin"
+            style="@style/leftlayout_infoLin"
+            >
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="68px"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/version_updateicon"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layout_menucontent_versionInfoTxtView"
+
+                style="@style/left_textStyle"
+                android:text="更新版本" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_menucontent_dynamicDimensionLin"
+            style="@style/leftlayout_infoLin"
+            >
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="64px"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/about_dongweiicon"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layout_menucontent_thirdRuleNameTxt"
+
+                style="@style/left_textStyle"
+                android:text="关于动维" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_menucontent_feedbackLin"
+            style="@style/leftlayout_infoLin"
+            >
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/feedback_ideaicon"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/left_textStyle"
+                android:text="意见反馈" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_menucontent_appexitLin"
+            style="@style/leftlayout_infoLin"
+            >
+            <LinearLayout
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="66px"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/app_exiticon"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/left_textStyle"
+                android:text="退出登录" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            style="@style/WrapWrap.Vertical"
+            android:paddingLeft="40px"
+            android:paddingBottom="100px"
+            android:paddingTop="15px"
+
+            >
+            <TextView
+                android:id="@+id/layout_menucontent_versionInfoTxt"
+                style="@style/WrapWrap"
+                android:text="版本号：1.0"
+                android:textColor="@color/white"
+                android:textSize="36px"
+                />
+            <LinearLayout
+                android:layout_marginTop="10px"
+                style="@style/WrapWrap.Horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    style="@style/WrapWrap"
+                    android:textColor="#FF9800"
+                    android:text="创造未来"
+                    android:textSize="42px"
+                    />
+                <ImageView
+                    android:layout_marginLeft="12px"
+                    android:layout_marginRight="12px"
+                    android:layout_width="15px"
+                    android:layout_height="15px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/qrcode_circleicon"
+                    />
+                <TextView
+                    style="@style/WrapWrap"
+                    android:textColor="#FF9800"
+                    android:text="实现科技智能可视化"
+                    android:textSize="42px"
+                    />
+            </LinearLayout>
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginTop="5px"
+                android:layout_marginLeft="10px"
+                android:text="Copyright @ 2018 动维技术"
+                android:textColor="@color/white"
+                android:textSize="36px"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

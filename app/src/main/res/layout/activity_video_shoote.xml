@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    >
+
+    <include layout="@layout/base_backleftnoright_headlayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/activity_videoshoote_usernewyearTxt"
+            style="@style/AutoMatch"
+            android:gravity="center"
+            android:text="用户拜年"
+            android:textColor="@color/paynewyeartxt_selector" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="30px"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/activity_videoshoote_enterprisenewyearTxt"
+
+            style="@style/AutoMatch"
+            android:gravity="center"
+            android:text="企业拜年"
+            android:textColor="@color/paynewyeartxt_selector"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_videoshoote_mFramelayout"
+        style="@style/MatchMatch">
+
+    </FrameLayout>
+</LinearLayout>

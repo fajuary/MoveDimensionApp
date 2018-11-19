@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap.Vertical"
+    android:background="@drawable/update_dialogbg"
+    >
+    <TextView
+       style="@style/WrapWrap"
+        android:layout_gravity="center"
+        android:layout_marginTop="43px"
+        android:text="正在更新"
+        android:textSize="43px"
+        android:textColor="#666666"
+        />
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:layout_marginTop="49px"
+        android:paddingBottom="69px"
+
+        >
+        <TextView
+            android:id="@+id/dialog_updating_versionNumTxt"
+            style="@style/WrapWrap"
+            android:text="版本号："
+            android:textColor="#666666"
+            android:textSize="38px"
+            />
+        <TextView
+            android:id="@+id/dialog_updating_versionDescripTxt"
+            style="@style/WrapWrap"
+            android:text="版本描述：修复已知bug"
+            android:textColor="#666666"
+            android:textSize="38px"
+            android:layout_marginTop="30px"
+            />
+        <TextView
+            android:id="@+id/update_progressTxt"
+            style="@style/WrapWrap"
+            android:layout_marginTop="30px"
+
+            android:textSize="38px"
+            android:text="更新进度：0%"/>
+
+        <ProgressBar
+            android:id="@+id/update_progress"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:max="100"
+            android:progress="0"
+            android:secondaryProgress="0"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/progressbar_color"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

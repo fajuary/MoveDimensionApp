@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/MatchMatch.Vertical"
+    android:background="#E8E8E8"
+    >
+    <include layout="@layout/base_backleftnoright_headlayout"/>
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:background="@color/white"
+        android:layout_marginTop="30px"
+        android:paddingBottom="40px"
+        >
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="30px"
+            android:text="欢迎大家提出宝贵意见"
+            android:textColor="#101010"
+            android:textSize="42px"
+            />
+        <EditText
+            android:id="@+id/activity_feedback_feedTitleEdtxt"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/feedback_inputbg"
+            android:hint="标题"
+            android:paddingLeft="15px"
+            android:textColor="#101010"
+            android:textColorHint="#888888"
+            android:textSize="38px"
+            android:textCursorDrawable="@null"
+
+            />
+        <EditText
+            android:id="@+id/activity_feedback_feedContentEdtxt"
+            style="@style/MatchWrap"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/feedback_inputbg"
+            android:hint="反馈内容"
+            android:gravity="start"
+            android:paddingLeft="15px"
+            android:paddingTop="15px"
+            android:textColor="#101010"
+            android:textColorHint="#888888"
+            android:minLines="6"
+            android:textSize="38px"
+            android:textCursorDrawable="@null"
+
+            />
+        
+        <TextView
+            android:id="@+id/activity_feedback_submitFeedTxt"
+            style="@style/WrapWrap"
+            android:textSize="38px"
+            android:layout_marginTop="80px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/submit_feedback"
+            android:text="提交反馈"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

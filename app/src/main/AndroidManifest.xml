@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dongwei.fajuary.movedimensionapp"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".base.MovedimensionApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <!-- 7.0版本更新 -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="dongwei.fajuary.movedimensionapp.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+
+        <!-- 屏幕适配 -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <activity android:name=".base.MainActivity">
+
+        </activity>
+        <activity android:name=".webpageModel.AboutDynamicdimensionActivity" />
+        <activity android:name=".webpageModel.NewyearStatementActivity" />
+        <activity android:name=".webpageModel.NewyearCourseActivity" />
+        <activity android:name=".webpageModel.PrizesRuleActivity" />
+        <activity android:name=".videoModel.NewYearlistActivity" />
+        <activity android:name=".videoModel.VideoShooteActivity" />
+        <activity android:name=".personInfoModel.FeedBackActivity" />
+        <activity android:name=".personInfoModel.BindePhonenumActivity" />
+        <activity android:name=".personInfoModel.MyVideolistActivity" />
+        <activity android:name=".videoModel.VideoGenerationActivity" />
+        <activity android:name=".loginModel.LoginActivity" />
+        <activity
+            android:name=".personInfoModel.PersonalDataActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!-- 分享配置 -->
+        <!-- umengAppKey，replace to yours -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a5c839eb27b0a0a380000ed" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <!-- tencent -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105401051" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".videoModel.SharingStyleActivity" />
+        <activity android:name=".loginModel.RegisterProtocolActivity" />
+        <activity android:name=".loginModel.PhoneNumLoginActivity" />
+        <activity android:name=".videoModel.VideoDetailsActivity"/>
+        <activity android:name=".startModel.SplashActivity"
+            android:theme="@style/WAppTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="moveapp" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchWrap"
+    android:id="@+id/recycleview_uservideo_uservideoLin"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20px"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    >
+    <ImageView
+        android:id="@+id/recycleview_uservideo_videoImgView"
+        style="@style/MatchWrap"
+        android:src="@drawable/video_shooteicon"
+        />
+    <LinearLayout
+       style="@style/MatchWrap.Vertical"
+        android:layout_gravity="bottom"
+        android:paddingBottom="40px"
+        android:paddingLeft="30px"
+        >
+        <TextView
+            android:id="@+id/recycleview_uservideo_videoTitleTxt"
+            style="@style/WrapWrap"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="34px"
+            />
+        <RelativeLayout
+            android:layout_marginTop="10px"
+            style="@style/MatchWrap">
+            <ImageView
+                android:id="@+id/recycleview_uservideo_videouserImg"
+
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:src="@drawable/default_personimg"
+                />
+            <TextView
+                android:id="@+id/recycleview_uservideo_videousernameTxt"
+
+                android:layout_toRightOf="@+id/recycleview_uservideo_videouserImg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+               style="@style/WrapWrap"
+                android:text="匿名"
+                android:textColor="@color/white"
+                android:textSize="38px"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

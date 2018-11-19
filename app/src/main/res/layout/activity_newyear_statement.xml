@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    >
+    <include layout="@layout/base_backleftnoright_headlayout"/>
+    <WebView
+        android:id="@+id/activity_newyearstate_mWebView"
+        style="@style/MatchMatch">
+
+    </WebView>
+</LinearLayout>

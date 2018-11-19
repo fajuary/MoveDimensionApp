@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="statusbarutil_fake_status_bar_view" />
+    <item type="id" name="statusbarutil_translucent_view" />
+    <item name="id_tag_autolayout_size" type="id"/>
+    <item name="id_tag_autolayout_padding" type="id"/>
+    <item name="id_tag_autolayout_margin" type="id"/>
+</resources>
